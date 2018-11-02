@@ -7,7 +7,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 
 
-# !/usr/bin/env python
+#
 def fpsShow():
     xy = (512, 512)
     Nf = 500
@@ -16,7 +16,7 @@ def fpsShow():
         tic = time()
         for i in dat:
             cv2.imshow('Fps test', i)
-            cv2.waitKey(1)  # integer milliseconds, 0 makes wait forever
+            cv2.waitKey(2)  # integer milliseconds, 0 makes wait forever
         cv2.destroyAllWindows()
         return Nf / (time() - tic)
 
@@ -36,10 +36,10 @@ def showimage():
     root = tk.Tk()
     root.title("display image")
     im = Image.open(
-        "C:/Users/miche/Desktop/trex.png")  # This is the correct location and spelling for my image location
+        r"C:\Users\miche\PycharmProjects\project2gui\trex.png")  # This is the correct location and spelling for my image location
     photo = ImageTk.PhotoImage(im)
     cv = tk.Canvas()
-    cv.pack(side='top', fill='both', expand='yes')
+    cv.grid( )
     cv.create_image(10, 10, image=photo, anchor='nw')
     root.mainloop()
 

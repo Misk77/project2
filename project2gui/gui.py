@@ -17,7 +17,7 @@ from ImportSubProcessFiles import Matrix, powershell
 from printoutgui import printSomething
 from funktioner import on_closing
 from sending_email.gmailmail import sendmail
-from playsound import stringE, a, b, d, g, stringe, lick
+from playingsound.playsound import stringE,a,d,g,b,stringe,lick
 
 # from appett.guiapp import Appgui
 
@@ -307,36 +307,35 @@ buttonWebSite.grid(column=3, row=8)
 # Button guess game
 buttonGuessingGame = ttk.Button(text="GuessingGame", command='')
 buttonGuessingGame.bind("<Return>", lambda event: '')
-buttonGuessingGame.grid(column=3, row=14)
+buttonGuessingGame.grid(column=3, row=9)
 # Button See the matrix
 buttonMatrix = ttk.Button(text="Enter the MATRIX", command=Matrix)
 buttonMatrix.bind("<Return>", lambda event: Matrix())
-buttonMatrix.grid(column=3, row=9)
+buttonMatrix.grid(column=3, row=10)
 # Button See the Powershell
 buttonMatrix = ttk.Button(text="Powershell", command=powershell)
 buttonMatrix.bind("<Return>", lambda event: powershell())
-buttonMatrix.grid(column=3, row=10)
-# Button FPS text textbild
+buttonMatrix.grid(column=3, row=11)
+# Button FPS  testbild
 buttonPrintOutGui = ttk.Button(text="FPS test video", command=fpsShow)
 buttonPrintOutGui.bind("<Return>", lambda event: fpsShow())
-buttonPrintOutGui.grid(column=3, row=11)
-# Button FPS text textbild
+buttonPrintOutGui.grid(column=3, row=12)
+# Button SHOW IMAGE
 buttonPrintOutGui = ttk.Button(text="Show Image", command=showimage)
 buttonPrintOutGui.bind("<Return>", lambda event: showimage())
 buttonPrintOutGui.grid(column=3, row=13)
 # Button Print out gui
 buttonPrintOutGui = ttk.Button(text="Print out gui", command=printSomething)
 buttonPrintOutGui.bind("<Return>", lambda event: printSomething())
-buttonPrintOutGui.grid(column=3, row=12)
+buttonPrintOutGui.grid(column=3, row=14)
 # Button Send gmail
 buttonPrintOutGui = ttk.Button(text="Send gmail", command=sendmail)
 buttonPrintOutGui.bind("<Return>", lambda event: sendmail())
-buttonPrintOutGui.grid(column=3, row=13)
+buttonPrintOutGui.grid(column=3, row=15)
 # Button Goodbye exit
 buttonGoodbye = ttk.Button(text="Press to exit", command=on_closing)
 buttonGoodbye.bind("<Return>", lambda event: on_closing())
 buttonGoodbye.grid(row=13)
-
 # Button Guitar tuner
 playE = Radiobutton(root, text='Play E', value=1, command=stringE)
 playE.grid(column=4, row=1)
