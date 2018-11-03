@@ -182,7 +182,7 @@ yrke VARCHAR(30)NOT NULL,
 country VARCHAR(30)NOT NULL,
 hobbies VARCHAR(30)NOT NULL,
 lenght VARCHAR(30)NOT NULL,
-sex ENUM('M','F') NOT NULL,
+sex ENUM('M','F','O') NOT NULL,
 date_entered TIMESTAMP,
 profiles_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY)
 default character set= utf8;

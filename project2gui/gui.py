@@ -17,7 +17,9 @@ from ImportSubProcessFiles import Matrix, powershell
 from printoutgui import printSomething
 from funktioner import on_closing
 from sending_email.gmailmail import sendmail
-from playingsound.playsound import stringE,a,d,g,b,stringe,lick
+from playingsound.playsound import stringE, a, d, g, b, stringe, lick
+from manuelInsert import guidb,database
+
 
 # from appett.guiapp import Appgui
 
@@ -273,6 +275,11 @@ buttonDescribeTable.grid(column=2, row=12)
 buttonDropTable = ttk.Button(text="SQL hostinger.com DROP table", command=sqlhostingDropTables)
 buttonDropTable.bind("<Return>", lambda event: sqlhostingDropTables())
 buttonDropTable.grid(column=2, row=10)
+###### MANUAL INSERT
+# Button Sql DROP tables
+buttonDropTable = ttk.Button(text="-------INSERT INTO profiles VALUES -------", command=guidb)
+buttonDropTable.bind("<Return>", lambda event:guidb())
+buttonDropTable.grid(column=2, row=13)
 
 #  Web  Connector STUFF   #
 # Button visit Misk playgroud
