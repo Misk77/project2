@@ -43,6 +43,8 @@ def server():
 
 def serverUI():
     root = Tk()
+    root.title("serverUI")
+    root.geometry("400x100")
 
     host = '127.0.0.1'  # server ip
     port = 53883  # server port som väntar på connection

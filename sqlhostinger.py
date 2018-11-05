@@ -33,6 +33,8 @@ __author__ = 'Michel Skoglund'
 
 def sqlhostingConnector():
     root = Tk()
+    root.title("sqlhostingConnector")
+    root.geometry("400x100")
     try:
         connect = mysql.connector.connect(
             user='u209758462_misk7',
@@ -70,6 +72,8 @@ def sqlhostingConnector():
 # SQl create Database # Cant create database at db4free  No Privileges
 def sqlhostingCreateDatabase():
     root = Tk()
+    root.title("sqlhostingCreateDatabase")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
                                              passwd='mi235277sk',
@@ -104,6 +108,8 @@ def sqlhostingCreateDatabase():
 
 def sqlhostingDropDatabase():
     root = Tk()
+    root.title("sqlhostingDropDatabase")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
                                              passwd='mi235277sk',
@@ -136,6 +142,8 @@ def sqlhostingDropDatabase():
 # Sql create Tables -
 def sqlhostingCreateTables():
     root = Tk()
+    root.title("sqlhostingCreateTables")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
                                              passwd='mi235277sk',
@@ -182,6 +190,8 @@ default character set= utf8;
 # DROP TABLE
 def sqlhostingDropTables():
     root = Tk()
+    root.title("sqlhostingDropTables")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
                                              passwd='mi235277sk',
@@ -219,6 +229,8 @@ DROP TABLE profiles;
 
 def sqlhostingInsertQuery():
     root = Tk()
+    root.title("sqlhostingInsertQuery")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
                                              passwd='mi235277sk',
@@ -255,6 +267,8 @@ def sqlhostingInsertQuery():
 
 def sqlhostingShowDb():
     root = Tk()
+    root.title("sqlhostingShowDb")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
                                              passwd='mi235277sk',
@@ -290,6 +304,8 @@ def sqlhostingShowDb():
 
 def sqlhostingUsedatabase():
     root = Tk()
+    root.title("sqlhostingUsedatabase")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
                                              passwd='mi235277sk',
@@ -320,9 +336,11 @@ def sqlhostingUsedatabase():
 
 
 def sqlhostingSelectDB():
-    from tkinter import ttk
+
 
     root = Tk()
+    root.title("sqlhostingSelectDB")
+    root.geometry("400x100")
 
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
@@ -364,6 +382,8 @@ def sqlhostingSelectDB():
 
 def sqlhostingDescribeTable():
     root = Tk()
+    root.title("sqlhostingReadFromDB")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
                                              passwd='mi235277sk',
@@ -399,6 +419,8 @@ def sqlhostingDescribeTable():
 # Read from Ddatabase
 def sqlhostingReadFromDB():
     root = Tk()
+    root.title("sqlhostingReadFromDB")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='u209758462_misk7',
                                              passwd='mi235277sk',
@@ -502,7 +524,7 @@ def hostingerdatabase():
 def hostingerguidb():
     root = Tk()
     root.geometry('500x500')
-    root.title('manual Insert into profiles')
+    root.title('manual Insert into profiles\nHostinger')
 
     global firstName
     firstName = StringVar()

@@ -36,6 +36,8 @@ __author__ = 'Michel Skoglund'
 
 def sqldb4freeConnector():
     root = Tk()
+    root.title("sqldb4freeConnector")
+    root.geometry("400x100")
     try:
         connect = mysql.connector.connect(
             user='misk77',
@@ -73,6 +75,8 @@ def sqldb4freeConnector():
 # SQl create Database # Cant create database at db4free  No Privileges
 def sqldb4freeCreateDatabase():
     root = Tk()
+    root.title("sqldb4freeCreateDatabase")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='misk77',
                                              passwd='mi235277sk',
@@ -107,6 +111,8 @@ def sqldb4freeCreateDatabase():
 
 def sqldb4freedropDatabase():
     root = Tk()
+    root.title("sqldb4freedropDatabase")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='misk77',
                                              passwd='mi235277sk',
@@ -139,6 +145,9 @@ def sqldb4freedropDatabase():
 # Sql create Tables -
 def sqldb4freecreateTables():
     root = Tk()
+    root.title("sqldb4freecreateTables")
+    root.geometry("400x100")
+
     try:
         connection = mysql.connector.connect(user='misk77',
                                              passwd='mi235277sk',
@@ -185,6 +194,8 @@ default character set= utf8;
 # DROP TABLE
 def sqldb4freedropTables():
     root = Tk()
+    root.title("sqldb4freedropTables")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='misk77',
                                              passwd='mi235277sk',
@@ -222,6 +233,8 @@ DROP TABLE profiles;
 
 def sqldb4freeInsertQuery():
     root = Tk()
+    root.title("sqldb4freeInsertQuery")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='misk77',
                                              passwd='mi235277sk',
@@ -258,6 +271,8 @@ def sqldb4freeInsertQuery():
 
 def sqldb4freeShowDb():
     root = Tk()
+    root.title("sqldb4freeShowDb")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='misk77',
                                              passwd='mi235277sk',
@@ -294,6 +309,8 @@ def sqldb4freeShowDb():
 
 def sqldb4freeUsedatabase():
     root = Tk()
+    root.title("sqldb4freeUsedatabase")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='misk77',
                                              passwd='mi235277sk',
@@ -324,9 +341,9 @@ def sqldb4freeUsedatabase():
 
 
 def sqldb4freeSelectDB():
-    from tkinter import ttk
-
     root = Tk()
+    root.title("sqldb4freeSelectDB")
+    root.geometry("400x100")
 
     try:
         connection = mysql.connector.connect(user='misk77',
@@ -368,6 +385,8 @@ def sqldb4freeSelectDB():
 
 def sqldb4freeDescribeTable():
     root = Tk()
+    root.title("sqldb4freeDescribeTable")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='misk77',
                                              passwd='mi235277sk',
@@ -403,6 +422,8 @@ def sqldb4freeDescribeTable():
 # Read from Ddatabase
 def sqldb4freeReadFromDB():
     root = Tk()
+    root.title("sqldb4freeReadFromDB")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='misk77',
                                              passwd='mi235277sk',

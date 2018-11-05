@@ -26,6 +26,8 @@ __author__ = 'Michel Skoglund'
 
 def sqlConnector():
     root = Tk()
+    root.title("sqlConnector")
+    root.geometry("400x100")
     try:
         connect = mysql.connector.connect(
             user='root',
@@ -58,6 +60,8 @@ def sqlConnector():
 # SQl create Database
 def createDatabase():
     root = Tk()
+    root.title("createDatabase")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(host='localhost',
                                              user='root',
@@ -99,6 +103,8 @@ def createDatabase():
 
 def dropDatabase():
     root = Tk()
+    root.title("dropDatabase")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(host='localhost',
                                              user='root',
@@ -131,6 +137,8 @@ def dropDatabase():
 
 def dropTables():
     root = Tk()
+    root.title("dropTables")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(user='root',
                                              passwd='root',
@@ -166,6 +174,8 @@ DROP TABLE profiles;
 # Sql create Tables -
 def createTables():
     root = Tk()
+    root.title("createTables")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(host='localhost',
                                              database='profiles',
@@ -215,6 +225,8 @@ default character set= utf8;
 
 def insertQuery():
     root = Tk()
+    root.title("insertQuery")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(host='localhost',
                                              database='profiles',
@@ -251,6 +263,8 @@ def insertQuery():
 
 def showDb():
     root = Tk()
+    root.title("showDb")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(host='localhost',
                                              database='profiles',
@@ -288,6 +302,8 @@ def showDb():
 
 def useProfiles():
     root = Tk()
+    root.title("useProfiles")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(host='localhost',
                                              user='root',
@@ -317,9 +333,10 @@ def useProfiles():
 
 
 def selectDB():
-    from tkinter import ttk
 
     root = Tk()
+    root.title("selectDB")
+    root.geometry("400x100")
 
     try:
         connection = mysql.connector.connect(host='localhost',
@@ -361,6 +378,8 @@ def selectDB():
 
 def describeTable():
     root = Tk()
+    root.title("describeTable")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(host='localhost',
                                              user='root',
@@ -396,6 +415,8 @@ def describeTable():
 # Read from Ddatabase
 def readFromDB():
     root = Tk()
+    root.title("readFromDB")
+    root.geometry("400x100")
     try:
         connection = mysql.connector.connect(host='localhost',
                                              database='profiles',
@@ -429,6 +450,7 @@ def readFromDB():
             connection.close()
             label = Label(root, text="MySQL koppling nerkopplad")
             label.pack()
+
     root.mainloop()
 
 

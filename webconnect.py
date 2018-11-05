@@ -1,4 +1,5 @@
 import webbrowser
+from tkinter import *
 
 
 def homeConnect(): \
@@ -31,4 +32,17 @@ def soloLearnConnect(): \
 
 def unofficialWinBIN(): \
         webbrowser.open('https://www.lfd.uci.edu/~gohlke/pythonlibs/', new=2)
-# Unofficial Windows Binaries for Python Extension Packages
+
+
+# ftp connection
+def ftpConnect():
+    import ftplib
+    root = Tk()
+    root.title("ftpConnect")
+    root.geometry('500x500')
+    server = ftplib.FTP()
+    server.connect('185.224.137.146', 21)
+    server.login('u209758462', 'mi235277sk')
+    server.dir()
+
+    root.mainloop()

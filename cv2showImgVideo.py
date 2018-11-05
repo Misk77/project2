@@ -76,3 +76,17 @@ def showimageombyggnad():
         print('Error')
     root.mainloop()
 # (r"C:\Users\miche\PycharmProjects\project2gui\trex.png")
+
+
+def showaboutplayground():
+    root = Tk()
+    frame1 = Frame(root)
+    frame1.config()
+    try:
+        import os
+        os.startfile((r"C:\Users\miche\PycharmProjects\project2gui\aboutplayground.txt"))
+
+    except IOError:
+        print('Error')
+    root.mainloop()
+# (r"C:\Users\miche\PycharmProjects\project2gui\trex.png")

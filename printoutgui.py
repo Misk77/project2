@@ -3,6 +3,8 @@ from tkinter import *
 
 def printSomething():
     root = Tk()
+    root.title("printSomething")
+    root.geometry("400x100")
     # if you want the button to disappear:
     # button.destroy() or button.pack_forget()
     for x in range(9):  # 0 is unnecessary

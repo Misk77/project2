@@ -12,13 +12,14 @@ from sqlhostinger import sqlhostingConnector, sqlhostingCreateDatabase, sqlhosti
 from socketScrips import socket_connect, server, serverUI
 from webconnect import homeConnect, wordPressConnect, googleConnect, slackConnect, guiPthonkConnect, \
     soloLearnConnect, \
-    unofficialWinBIN, downloadpage
-from cv2showImgVideo import fpsShow, showimagePIL, showimageOsStartfile, showvideo, showimageombyggnad
-from ImportSubProcessFiles import Matrix, powershell
+    unofficialWinBIN, downloadpage, ftpConnect
+from cv2showImgVideo import fpsShow, showimagePIL, showimageOsStartfile, showvideo, showimageombyggnad,showaboutplayground
+from ImportSubProcessFiles import Matrix, powershell,testScriptTime
 from printoutgui import printSomething
 from funktioner import on_closing
 from sending_email.gmailmail import sendmail
 from playingsound.playsound import stringE, a, d, g, b, stringe, lick, showvideoSound
+from opentxtfile import read_about
 
 # from appett.guiapp import Appgui
 
@@ -29,7 +30,7 @@ root = Tk()
 root.configure(background="black")
 root.iconbitmap(default="Untitled.ico")
 root.title("Michel´s Playground Title")
-root.geometry("1250x700")
+root.geometry("1150x500")
 guiframe = Frame(root)
 guiframe.grid(row=0, column=2, columnspan=7, rowspan=7)
 """
@@ -57,7 +58,7 @@ root.style = ttk.Style()
 
 
 menubar = Menu(root)
-# Server options menu
+# Server SOCKET options menu
 servermenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Server Options", menu=servermenu)
 servermenu.add_command(label="Start server", command=server)
@@ -119,15 +120,16 @@ sqlhosting.add_command(label="DROP TABLE profiles hostinger", command=sqlhosting
 sqlhosting.add_separator()
 sqlhosting.add_command(label="Exit", command=root.quit)
 
-# HomePage options menu
-homePage = Menu(menubar, tearoff=0)
-menubar.add_cascade(label="Homepages", menu=homePage)
-homePage.add_command(label="Search Google ", command=googleConnect)
-homePage.add_command(label="Visit My HomePage", command=homeConnect)
-homePage.add_command(label="Slack", command=slackConnect)
-homePage.add_command(label="Unofficial Win Binary package", command=unofficialWinBIN)
-homePage.add_separator()
-homePage.add_command(label="Exit", command=root.quit)
+# Web connection options menu
+webmenu = Menu(menubar, tearoff=0)
+menubar.add_cascade(label="Web connections", menu=webmenu)
+webmenu.add_command(label="Search Google ", command=googleConnect)
+webmenu.add_command(label="Visit My HomePage", command=homeConnect)
+webmenu.add_command(label="Slack", command=slackConnect)
+webmenu.add_command(label="FTP Connection", command=ftpConnect)
+webmenu.add_command(label="Unofficial Win Binary package", command=unofficialWinBIN)
+webmenu.add_separator()
+webmenu.add_command(label="Exit", command=root.quit)
 
 # Games options menu
 gamemenu = Menu(menubar, tearoff=0)
@@ -178,6 +180,8 @@ miscmenu.add_command(label="SHOW avi cvOPEN", command=showvideo)
 miscmenu.add_command(label="SHOW avi OS", command=showvideoSound)
 miscmenu.add_command(label="Print out gui", command=printSomething)
 miscmenu.add_command(label="Send Gmail", command=sendmail)
+miscmenu.add_command(label="Connects to FTP", command=sendmail)
+miscmenu.add_command(label="Test Script Time", command=testScriptTime)
 miscmenu.add_command(label="Programming 5", command=showimageombyggnad)
 miscmenu.add_separator()
 miscmenu.add_command(label="Exit", command=root.quit)
@@ -188,6 +192,7 @@ menubar.add_cascade(label="Help", menu=helpmenu)
 helpmenu.add_command(label="Search Google", command=googleConnect)
 helpmenu.add_command(label="Slack", command=slackConnect)
 helpmenu.add_command(label="Unofficial Win Binary package", command=unofficialWinBIN)
+helpmenu.add_command(label="About playground", command=showaboutplayground)
 helpmenu.add_separator()
 helpmenu.add_command(label="Exit", command=on_closing)
 
@@ -202,6 +207,40 @@ buttonServer.grid(column=0, row=2)
 buttonClient = ttk.Button(text="CLIENT multiserver socket", command=socket_connect)
 buttonClient.bind("<Return>", lambda event: socket_connect)
 buttonClient.grid(column=0, row=3)
+
+#  Web  Connector STUFF   #
+# Button visit Misk playgroud
+buttonWebSite = ttk.Button(text="Visit My HomePage", command=homeConnect)
+buttonWebSite.bind("<Return>", lambda event: homeConnect())
+buttonWebSite.grid(column=0, row=5)
+# Button visit michels wordpress
+buttonWebSite = ttk.Button(text="Visit My Wordpress", command=wordPressConnect)
+buttonWebSite.bind("<Return>", lambda event: wordPressConnect())
+buttonWebSite.grid(column=0, row=6)
+# Button visit DownloadPage
+buttonWebSite = ttk.Button(text="Visit My DownloadPage", command=downloadpage)
+buttonWebSite.bind("<Return>", lambda event: downloadpage())
+buttonWebSite.grid(column=0, row=7)
+# Button visit Google
+buttonWebSite = ttk.Button(text="Search Google", command=googleConnect)
+buttonWebSite.bind("<Return>", lambda event: googleConnect())
+buttonWebSite.grid(column=0, row=8)
+# Button  Slack
+buttonWebSite = ttk.Button(text="Slack", command=slackConnect)
+buttonWebSite.bind("<Return>", lambda event: slackConnect())
+buttonWebSite.grid(column=0, row=9)
+# Button GUI Programming (Tkinter
+buttonWebSite = ttk.Button(text="Python 3 - GUI Programming (Tkinter)", command=guiPthonkConnect)
+buttonWebSite.bind("<Return>", lambda event: guiPthonkConnect())
+buttonWebSite.grid(column=0, row=10)
+# Button Unofficial Windows Binaries for Python Extension Packages
+buttonWebSite = ttk.Button(text="Unofficial Win Binaries for Python Extension Packages", command=unofficialWinBIN)
+buttonWebSite.bind("<Return>", lambda event: unofficialWinBIN())
+buttonWebSite.grid(column=0, row=11)
+# Button Connect to FTP Hostinger
+buttonFtpHostinger = ttk.Button(text="Connect to FTP Hostinger", command=ftpConnect)
+buttonFtpHostinger.bind("<Return>", lambda event: ftpConnect())
+buttonFtpHostinger.grid(column=0, row=12)
 
 # SQL STUFF
 # SQL LOCAL
@@ -305,76 +344,51 @@ buttonManINSERT = ttk.Button(text="hostinger MANUAL INSERT INTO profiles VALUES 
 buttonManINSERT.bind("<Return>", lambda event: hostingerguidb())
 buttonManINSERT.grid(column=2, row=13)
 
-#  Web  Connector STUFF   #
-# Button visit Misk playgroud
-buttonWebSite = ttk.Button(text="Visit My HomePage", command=homeConnect)
-buttonWebSite.bind("<Return>", lambda event: homeConnect())
-buttonWebSite.grid(column=3, row=2)
-# Button visit michels wordpress
-buttonWebSite = ttk.Button(text="Visit My Wordpress", command=wordPressConnect)
-buttonWebSite.bind("<Return>", lambda event: wordPressConnect())
-buttonWebSite.grid(column=3, row=3)
-# Button visit DownloadPage
-buttonWebSite = ttk.Button(text="Visit My DownloadPage", command=downloadpage)
-buttonWebSite.bind("<Return>", lambda event: downloadpage())
-buttonWebSite.grid(column=3, row=4)
-# Button visit Google
-buttonWebSite = ttk.Button(text="Search Google", command=googleConnect)
-buttonWebSite.bind("<Return>", lambda event: googleConnect())
-buttonWebSite.grid(column=3, row=5)
-# Button  Slack
-buttonWebSite = ttk.Button(text="Slack", command=slackConnect)
-buttonWebSite.bind("<Return>", lambda event: slackConnect())
-buttonWebSite.grid(column=3, row=6)
-# Button GUI Programming (Tkinter
-buttonWebSite = ttk.Button(text="Python 3 - GUI Programming (Tkinter)", command=guiPthonkConnect)
-buttonWebSite.bind("<Return>", lambda event: guiPthonkConnect())
-buttonWebSite.grid(column=3, row=7)
-# Button Unofficial Windows Binaries for Python Extension Packages
-buttonWebSite = ttk.Button(text="Unofficial Win Binaries for Python Extension Packages", command=unofficialWinBIN)
-buttonWebSite.bind("<Return>", lambda event: unofficialWinBIN())
-buttonWebSite.grid(column=3, row=8)
 # Misc STUFF
 # Button guess game
 buttonGuessingGame = ttk.Button(text="GuessingGame", command=showimageombyggnad)
 buttonGuessingGame.bind("<Return>", lambda event: showimageombyggnad())
-buttonGuessingGame.grid(column=3, row=9)
+buttonGuessingGame.grid(column=3, row=2)
 # Button See the matrix
 buttonMatrix = ttk.Button(text="Enter the MATRIX", command=Matrix)
 buttonMatrix.bind("<Return>", lambda event: Matrix())
-buttonMatrix.grid(column=3, row=10)
+buttonMatrix.grid(column=3, row=3)
 # Button See the Powershell
 buttonMatrix = ttk.Button(text="Powershell", command=powershell)
 buttonMatrix.bind("<Return>", lambda event: powershell())
-buttonMatrix.grid(column=3, row=11)
+buttonMatrix.grid(column=3, row=4)
 # Button FPS  testbild
 buttonPrintOutGui = ttk.Button(text="FPS test video", command=fpsShow)
 buttonPrintOutGui.bind("<Return>", lambda event: fpsShow())
-buttonPrintOutGui.grid(column=3, row=12)
+buttonPrintOutGui.grid(column=3, row=5)
 # Button SHOW IMAGEPIL
 buttonIMAGEPIL = ttk.Button(text="Show ImageWith PIL", command=showimagePIL)
 buttonIMAGEPIL.bind("<Return>", lambda event: showimagePIL())
-buttonIMAGEPIL.grid(column=3, row=13)
+buttonIMAGEPIL.grid(column=3, row=6)
 # Button SHOW IMAGE OSstartfile
 buttonOSstartfile = ttk.Button(text="Show Image OS startfile", command=showimageOsStartfile)
 buttonOSstartfile.bind("<Return>", lambda event: showimageOsStartfile())
-buttonOSstartfile.grid(column=3, row=14)
+buttonOSstartfile.grid(column=3, row=7)
 # Button Print out gui
 buttonPrintOutGui = ttk.Button(text="Print out gui", command=printSomething)
 buttonPrintOutGui.bind("<Return>", lambda event: printSomething())
-buttonPrintOutGui.grid(column=3, row=15)
+buttonPrintOutGui.grid(column=3, row=8)
 # Button Send gmail
 buttonPrintOutGui = ttk.Button(text="Send gmail", command=sendmail)
 buttonPrintOutGui.bind("<Return>", lambda event: sendmail())
-buttonPrintOutGui.grid(column=3, row=16)
+buttonPrintOutGui.grid(column=3, row=9)
 # SHOW avicvOPEN
 buttonOSstartfile = ttk.Button(text="SHOW avi cvOPEN NO SOUND", command=showvideo)
 buttonOSstartfile.bind("<Return>", lambda event: showvideo())
-buttonOSstartfile.grid(column=3, row=17)
-# SHOW avicvOPEN
+buttonOSstartfile.grid(column=3, row=10)
+# SHOW avicvOPEN        testScriptTime
 buttonOSstartfile = ttk.Button(text="SHOW avi OS SOUND", command=showvideoSound)
 buttonOSstartfile.bind("<Return>", lambda event: showvideoSound())
-buttonOSstartfile.grid(column=3, row=18)
+buttonOSstartfile.grid(column=3, row=11)
+# testScriptTime
+buttonOSstartfile = ttk.Button(text="Test Script time", command=testScriptTime)
+buttonOSstartfile.bind("<Return>", lambda event: testScriptTime())
+buttonOSstartfile.grid(column=3, row=12)
 # Button Goodbye exit
 buttonGoodbye = Button(root, text="Press to exit", command=on_closing,
                        bg='#000000',
@@ -382,19 +396,19 @@ buttonGoodbye = Button(root, text="Press to exit", command=on_closing,
                        relief='flat',
                        width=20)
 buttonGoodbye.bind("<Return>", lambda event: on_closing())
-buttonGoodbye.grid(row=18)
+buttonGoodbye.grid(row=15)
 buttonGoodbye.grid()
 
 # Button Guitar tuner
 playE = Radiobutton(root, text='Tune string E', value=1, command=stringE)
 playE.configure(foreground='green')
-playE.grid(column=4, row=1)
+playE.grid(column=4, row=2)
 playA = Radiobutton(root, text='Tune string A', value=1, command=a)
 playA.configure(foreground='gold')
-playA.grid(column=4, row=2)
+playA.grid(column=4, row=3)
 playD = Radiobutton(root, text='Tune string D', value=1, command=d)
 playD.configure(foreground='magenta')
-playD.grid(column=4, row=3)
+playD.grid(column=4, row=4)
 playG = Radiobutton(root, text='Tune string G', value=1, command=g)
 playG.configure(foreground='purple')
 playG.grid(column=4, row=5)
