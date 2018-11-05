@@ -31,7 +31,7 @@ root = Tk()
 root.configure(background="black")
 root.iconbitmap(default="Untitled.ico")
 root.title("Michel´s Playground")
-root.geometry("1150x660")
+root.geometry("1150x600")
 
 # background imgage
 frame1 = Frame(root)
@@ -39,14 +39,14 @@ frame1 = Frame(root, width=400, height=450)
 frame1.place(height=7000, width=4000, x=10, y=100)
 frame1.config()
 
-frame1.grid(columnspan=10, rowspan=10)
+frame1.grid(columnspan=18, rowspan=18)
 
 frame1.grid_rowconfigure(0, weight=1)
 frame1.grid_columnconfigure(0, weight=1)
 
 photo = PhotoImage(file=r"C:\Users\miche\PycharmProjects\project2gui\backgroundwebsite.png")
 label = Label(root, image=photo)
-label.image = photo  # keep a reference!
+label.image = photo
 label.grid(row=0, column=0, columnspan=21, rowspan=30)
 
 # MIN LABEL

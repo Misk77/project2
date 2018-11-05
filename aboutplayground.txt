@@ -1,60 +1,53 @@
 Michel gui playground - About this page
 (Detta dokument kan du skriva direkt i)
-Mitt  syfte var att se och testa gui, tkinter och vad som Ã¤r mÃ¶jligt  med dessa funktioner och redskap.
-BÃ¶rjade  med enkel layout, samt gjorde en Class med olika fÃ¶nster men lÃ¤mnade den utanfÃ¶lr i nulÃ¤get , dÃ¥ jag fÃ¶rsÃ¶kt lÃ¤ra mig olika 
-funktioner och moduler och fick problem att lÃ¤gga in allt i class fram,root.
-Denna Class gui ligger kvar som fill och kan startas men har ej lagt till nÃ¥gon utom 2 sidor som kan nÃ¥s frÃ¥n alla sidor
+Mitt  syfte var att se och testa gui, tkinter och vad som är möjligt  med dessa funktioner och redskap.
+Började  med enkel layout, samt gjorde en Class med olika fönster men lämnade den utanfölr i nuläget , då jag försökt lära mig olika 
+funktioner och moduler och fick problem att lägga in allt i class fram,root.
+Denna Class gui ligger kvar som fill och kan startas men har ej lagt till någon utom 2 sidor som kan nås från alla sidor
 
 
-Projektet i nulÃ¤get:
+Projektet i nuläget:
 En samling med saker som jag fann intressanta och bra att ha i en samlings gui "playground"
 3 st databaser med olika funktioner.
-2 st databaser som har all access och som man kan lÃ¤gga in manuellt till profiles, som i nulÃ¤get Ã¤r databasen , table som Ã¤r hÃ¥rdkodad.
+2 st databaser som har all access och som man kan lägga in manuellt till profiles, som i nuläget är databasen , table som är hårdkodad.
 
 webconnector:
-DÃ¤r man kan connecta till olika sidor pÃ¥ internet bla min hemsida och wordpress sida som jag hÃ¥ller pÃ¥ gÃ¶ra via min andra skola som jag ocksÃ¥ gÃ¥r
+Där man kan connecta till olika sidor på internet bla min hemsida och wordpress sida som jag håller på göra via min andra skola som jag också går
 parallellt med nackademin
 
 ljud/filmer:
-lagt in olika intressanta lÃ¶sningar pÃ¥ att starta ljud,filmer via gui
-dels anvÃ¤nda import os och dels anvÃ¤nda opencv(cv2)
-OcksÃ¥ lagt in enkel version pÃ¥ en tuner fÃ¶r gitarr, som spelar dom olika stÃ¤mtonerna till en gitarr.
+lagt in olika intressanta lösningar på att starta ljud,filmer via gui
+dels använda import os och dels använda opencv(cv2)
+Också lagt in enkel version på en tuner för gitarr, som spelar dom olika stämtonerna till en gitarr.
 
 email:
-FÃ¶rsÃ¶kte gÃ¶r sÃ¥ man kunde sÃ¤nda email,och skriva egen msg men i mulÃ¤get sÃ¥ Ã¤r msg hÃ¥rdkodad och kan ifs 
-Ã¤ndras i scriptet ifall man vill Ã¤ndra meddelandet, det gick bara till gmail, dÃ¥ jag tror att hotmail(outlook) har hÃ¶gre sÃ¤kerhet och man kan ej
-ej vÃ¤lja att mindre anfÃ¶rtrodda applikationer ska kunna skicka.
+Försökte gör så man kunde sända email,och skriva egen msg men i muläget så är msg hårdkodad och kan ifs 
+ändras i scriptet ifall man vill ändra meddelandet, det gick bara till gmail, då jag tror att hotmail(outlook) har högre säkerhet och man kan ej
+ej välja att mindre anförtrodda applikationer ska kunna skicka.
 
 powershell:
-Man kan starta powershell och skriva commando i python terminalen i nulÃ¤get.
-tanken var att powershell skulle starta i sitt fÃ¶nster, men jobbar pÃ¥ det...hmmm
+Man kan starta powershell och skriva commando i python terminalen i nuläget.
+tanken var att powershell skulle starta i sitt fönster, men jobbar på det...hmmm
 
 about this page:
 Lagt in en liten text about tis page,
-dÃ¤r det stÃ¥r lite om hemsidan och tanke etc
+där det står lite om hemsidan och tanke etc
 
 testScriptTime:
-Kolla hur snabbt ett script kÃ¶rs
-man mÃ¥ste lÃ¤ggga in scriptet mauellt som en funtion
+Kolla hur snabbt ett script körs
+man måste läggga in scriptet mauellt som en funtion
 test()
 
 Exit funktionen:
-Exit valet frÃ¥gar ocksÃ¥ anvÃ¤ndaren ifall man verkligen vill avsluta programmet.
-detta kan ske via tryck pÃ¥ knapp,text eller trycka pÃ¥ esc-escape knappen pÃ¥ datorn.
+Exit valet frågar också användaren ifall man verkligen vill avsluta programmet.
+detta kan ske via tryck på knapp,text eller trycka på esc-escape knappen på datorn.
 
-Ã–vrigt: 
-lagt in en logo som Ã¤r pÃ¥ mina fÃ¶nster och style, fÃ¤rger, pÃ¥ text och knappar fÃ¶r att testa , leka med layouten och se vad som Ã¤r mÃ¶jligt.
-ca 52 funktioner, knappar, som ocksÃ¥ vissa anvÃ¤nder Ã¥terkommande funktioner fast med annat syfte.
+Övrigt: 
+lagt in en logo som är på mina fönster och style, färger, på text och knappar för att testa , leka med layouten och se vad som är möjligt.
+ca 52 funktioner, knappar, som också vissa använder återkommande funktioner fast med annat syfte.
 
-alla button har ocksÃ¥ egna menyer sÃ¥ man kan komma Ã¥t alla funktioner pÃ¥ olika sÃ¤tt, 
+alla button har också egna menyer så man kan komma åt alla funktioner på olika sätt, 
 alla menuer har en exit val
 
 
-Nya inlÃ¤gg efter 2018-11-05:
-testScriptTime:
-about this page:
-Lagt till sÃ¥ alla tk fÃ¶nster har egen title sÃ¥ man ser vilken funktion som kÃ¶r, samt satt en storlek pÃ¥ fÃ¶nstret sÃ¥ det blir lite snyggare mÃ¤r fÃ¶rnstret Ã¶ppnas satte med:
-root.title("")
-root.geometry("400x100")
-passar dom flesta fÃ¶nstren men kan behÃ¶vas dras ut ibland fÃ¶r att kunna se all text pÃ¥ vissa fÃ¶nster, men ville att alla fÃ¶nster skulle ha samma storlek att bÃ¶rja med iaf.
-
+Nya inlägg efter 2018-11-05:
