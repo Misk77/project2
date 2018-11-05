@@ -66,6 +66,8 @@ def showvideo():
 
 def showimageombyggnad():
     root = Tk()
+    root.title("showimageombyggnad")
+    root.geometry("400x100")
     frame1 = Frame(root)
     frame1.config()
     try:
@@ -80,6 +82,8 @@ def showimageombyggnad():
 
 def showaboutplayground():
     root = Tk()
+    root.title("showaboutplayground")
+    root.geometry("400x100")
     frame1 = Frame(root)
     frame1.config()
     try:

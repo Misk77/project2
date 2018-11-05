@@ -13,8 +13,9 @@ from socketScrips import socket_connect, server, serverUI
 from webconnect import homeConnect, wordPressConnect, googleConnect, slackConnect, guiPthonkConnect, \
     soloLearnConnect, \
     unofficialWinBIN, downloadpage, ftpConnect
-from cv2showImgVideo import fpsShow, showimagePIL, showimageOsStartfile, showvideo, showimageombyggnad,showaboutplayground
-from ImportSubProcessFiles import Matrix, powershell,testScriptTime
+from cv2showImgVideo import fpsShow, showimagePIL, showimageOsStartfile, showvideo, showimageombyggnad, \
+    showaboutplayground
+from ImportSubProcessFiles import Matrix, powershell, testScriptTime
 from printoutgui import printSomething
 from funktioner import on_closing
 from sending_email.gmailmail import sendmail
@@ -29,22 +30,24 @@ from opentxtfile import read_about
 root = Tk()
 root.configure(background="black")
 root.iconbitmap(default="Untitled.ico")
-root.title("Michel´s Playground Title")
-root.geometry("1150x500")
-guiframe = Frame(root)
-guiframe.grid(row=0, column=2, columnspan=7, rowspan=7)
-"""
-guiframe2 = Frame(root)
-labeltwo = ttk.Label(guiframe2,text="(use the exit or esc to quit)")
-guiframe2.grid(row=0, column=0, )
-labeltwo.config(font=("Inconsolata", 20))
-"""
+root.title("Michel´s Playground")
+root.geometry("1150x660")
 
-#  MY Canvas
-# myBackgroundCanvas = Canvas(root, bg="black")
-# myBackgroundCanvas.grid(row=0,column=0,columnspan=6)
-# photobackground = PhotoImage(file="./Untitled.gif")
-# myBackgroundCanvas.create_image(0, 100, image=photobackground)
+# background imgage
+frame1 = Frame(root)
+frame1 = Frame(root, width=400, height=450)
+frame1.place(height=7000, width=4000, x=10, y=100)
+frame1.config()
+
+frame1.grid(columnspan=10, rowspan=10)
+
+frame1.grid_rowconfigure(0, weight=1)
+frame1.grid_columnconfigure(0, weight=1)
+
+photo = PhotoImage(file=r"C:\Users\miche\PycharmProjects\project2gui\backgroundwebsite.png")
+label = Label(root, image=photo)
+label.image = photo  # keep a reference!
+label.grid(row=0, column=0, columnspan=21, rowspan=30)
 
 # MIN LABEL
 labelett = ttk.Label(text="Michel's Playground")

@@ -12,14 +12,15 @@
     <session id="-153169737">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -28,7 +29,7 @@
           <entry key="db" value="1" />
           <entry key="jpg" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="120" />
+          <entry key="py" value="128" />
           <entry key="txt" value="18" />
           <entry key="xml" value="1" />
         </counts>
@@ -38,7 +39,7 @@
           <entry key="Bat" value="1" />
           <entry key="Image" value="2" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="120" />
+          <entry key="Python" value="128" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -46,7 +47,7 @@
         <counts>
           <entry key="bat" value="2" />
           <entry key="dummy" value="13" />
-          <entry key="py" value="5235" />
+          <entry key="py" value="5524" />
           <entry key="txt" value="221" />
         </counts>
       </usages-collector>
@@ -54,36 +55,51 @@
         <counts>
           <entry key="Bat" value="2" />
           <entry key="PLAIN_TEXT" value="234" />
-          <entry key="Python" value="5235" />
+          <entry key="Python" value="5524" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aboutplayground.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guiapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="39" lean-forward="true" selection-start-line="30" selection-end-line="39" />
+            <state relative-caret-position="189">
+              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gui.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ImportSubProcessFiles.py">
+        <entry file="file://$PROJECT_DIR$/guiplayground/gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="93">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-                <marker date="1541413848264" expanded="true" signature="618:619" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -98,8 +114,6 @@
         <option value="$PROJECT_DIR$/funktioner.py" />
         <option value="$PROJECT_DIR$/printoutanotherwindow.py" />
         <option value="$PROJECT_DIR$/multiServer.py" />
-        <option value="$PROJECT_DIR$/cv2showImgVideo.py" />
-        <option value="$PROJECT_DIR$/gui.py" />
         <option value="$PROJECT_DIR$/ImportSubProcessFiles.py" />
         <option value="$PROJECT_DIR$/opentxtfile.py" />
         <option value="$PROJECT_DIR$/printoutgui.py" />
@@ -109,14 +123,17 @@
         <option value="$PROJECT_DIR$/sqlLocal.py" />
         <option value="$PROJECT_DIR$/webconnect.py" />
         <option value="$PROJECT_DIR$/aboutplayground.txt" />
+        <option value="$PROJECT_DIR$/cv2showImgVideo.py" />
+        <option value="$PROJECT_DIR$/guiplayground/gui.py" />
+        <option value="$PROJECT_DIR$/gui.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="503" />
+    <option name="y" value="6" />
+    <option name="width" value="868" />
+    <option name="height" value="746" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -131,6 +148,15 @@
               <item name="project2gui" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2gui" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="project2gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2gui" type="462c0819:PsiDirectoryNode" />
+              <item name="guiplayground" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projekt1profiles" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -143,12 +169,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\miche\PycharmProjects\project2gui\guiplayground" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\miche\PycharmProjects\project2gui" />
       <recent name="C:\Users\miche\PycharmProjects\project2gui\playingsound" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\miche\PycharmProjects\project2gui\guiplayground" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -185,6 +211,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="gui (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project2gui" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/guiplayground" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/guiplayground/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project2gui" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -198,27 +245,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="manuelInsert" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="project2gui" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/guiplayground" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/guiplayground/manuelInsert.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -272,17 +298,17 @@
     <list>
       <item itemvalue="Python.gui" />
       <item itemvalue="Python.ImportSubProcessFiles" />
-      <item itemvalue="Python.manuelInsert" />
       <item itemvalue="Python.opentxtfile" />
       <item itemvalue="Python.webconnect" />
+      <item itemvalue="Python.gui (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.gui" />
+        <item itemvalue="Python.gui (1)" />
         <item itemvalue="Python.ImportSubProcessFiles" />
         <item itemvalue="Python.webconnect" />
         <item itemvalue="Python.opentxtfile" />
-        <item itemvalue="Python.manuelInsert" />
       </list>
     </recent_temporary>
   </component>
@@ -300,14 +326,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="8" width="1382" height="744" extended-state="0" />
+    <frame x="503" y="6" width="868" height="746" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36757424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27704918" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2761438" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -369,13 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guiapp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kalle.txt" />
     <entry file="file://$PROJECT_DIR$/profilestxt.txt" />
     <entry file="file://$PROJECT_DIR$/.txt" />
@@ -388,30 +407,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbtxt.txt" />
-    <entry file="file://$PROJECT_DIR$/gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="31" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cv2showImgVideo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/funktioner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/printoutgui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -426,13 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sqlhostinger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sqlLocal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -444,9 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -454,16 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/multiServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -474,28 +449,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sqlhostinger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/guessinggame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-534">
+        <state relative-caret-position="17">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImportSubProcessFiles.py">
+    <entry file="file://$PROJECT_DIR$/funktioner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1541413848264" expanded="true" signature="618:619" ph="..." />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aboutplayground.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="39" lean-forward="true" selection-start-line="30" selection-end-line="39" />
+        <state relative-caret-position="333">
+          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cv2showImgVideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImportSubProcessFiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guiapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guiplayground/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>
