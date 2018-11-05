@@ -12,7 +12,7 @@
     <session id="-153169737">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -29,7 +29,7 @@
           <entry key="db" value="1" />
           <entry key="jpg" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="128" />
+          <entry key="py" value="129" />
           <entry key="txt" value="18" />
           <entry key="xml" value="1" />
         </counts>
@@ -39,7 +39,7 @@
           <entry key="Bat" value="1" />
           <entry key="Image" value="2" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="128" />
+          <entry key="Python" value="129" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -47,7 +47,7 @@
         <counts>
           <entry key="bat" value="2" />
           <entry key="dummy" value="13" />
-          <entry key="py" value="5593" />
+          <entry key="py" value="5628" />
           <entry key="txt" value="221" />
         </counts>
       </usages-collector>
@@ -55,44 +55,13 @@
         <counts>
           <entry key="Bat" value="2" />
           <entry key="PLAIN_TEXT" value="234" />
-          <entry key="Python" value="5593" />
+          <entry key="Python" value="5628" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guiapp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="27" column="42" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gui.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guiplayground/gui.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -121,17 +90,16 @@
         <option value="$PROJECT_DIR$/sqldb4free.py" />
         <option value="$PROJECT_DIR$/sqlhostinger.py" />
         <option value="$PROJECT_DIR$/sqlLocal.py" />
-        <option value="$PROJECT_DIR$/webconnect.py" />
         <option value="$PROJECT_DIR$/aboutplayground.txt" />
         <option value="$PROJECT_DIR$/cv2showImgVideo.py" />
         <option value="$PROJECT_DIR$/guiplayground/gui.py" />
+        <option value="$PROJECT_DIR$/webconnect.py" />
         <option value="$PROJECT_DIR$/gui.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="6" />
-    <option name="y" value="9" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="434" />
     <option name="width" value="868" />
     <option name="height" value="746" />
   </component>
@@ -147,15 +115,6 @@
             <path>
               <item name="project2gui" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2gui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2gui" type="462c0819:PsiDirectoryNode" />
-              <item name="guiplayground" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2gui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projekt1profiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,15 +285,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="9" width="868" height="746" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37747526" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23071104" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27450982" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27540985" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,13 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webconnect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/opentxtfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -499,27 +450,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guiapp.py">
+    <entry file="file://$PROJECT_DIR$/gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guiplayground/gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="223">
+          <caret line="131" column="63" lean-forward="true" selection-start-line="131" selection-start-column="63" selection-end-line="131" selection-end-column="63" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui.py">
+    <entry file="file://$PROJECT_DIR$/guiapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="189">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webconnect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guiplayground/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

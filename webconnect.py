@@ -22,6 +22,10 @@ def slackConnect(): \
         webbrowser.open('https://slack.com/signin', new=2)
 
 
+def pythonInteractiveConnect(): \
+        webbrowser.open('https://www.pythonanywhere.com/user/Misk/consoles/10964195/', new=2)
+
+
 def guiPthonkConnect(): \
         webbrowser.open('https://www.tutorialspoint.com/python3/python_gui_programming.htm', new=2)
 

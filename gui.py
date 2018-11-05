@@ -12,7 +12,7 @@ from sqlhostinger import sqlhostingConnector, sqlhostingCreateDatabase, sqlhosti
 from socketScrips import socket_connect, server, serverUI
 from webconnect import homeConnect, wordPressConnect, googleConnect, slackConnect, guiPthonkConnect, \
     soloLearnConnect, \
-    unofficialWinBIN, downloadpage, ftpConnect
+    unofficialWinBIN, downloadpage, ftpConnect,pythonInteractiveConnect
 from cv2showImgVideo import fpsShow, showimagePIL, showimageOsStartfile, showvideo, showimageombyggnad, \
     showaboutplayground
 from ImportSubProcessFiles import Matrix, powershell, testScriptTime
@@ -130,6 +130,7 @@ webmenu.add_command(label="Search Google ", command=googleConnect)
 webmenu.add_command(label="Visit My HomePage", command=homeConnect)
 webmenu.add_command(label="Slack", command=slackConnect)
 webmenu.add_command(label="FTP Connection", command=ftpConnect)
+webmenu.add_command(label="FTP Connection", command=pythonInteractiveConnect)
 webmenu.add_command(label="Unofficial Win Binary package", command=unofficialWinBIN)
 webmenu.add_separator()
 webmenu.add_command(label="Exit", command=root.quit)
@@ -244,6 +245,10 @@ buttonWebSite.grid(column=0, row=11)
 buttonFtpHostinger = ttk.Button(text="Connect to FTP Hostinger", command=ftpConnect)
 buttonFtpHostinger.bind("<Return>", lambda event: ftpConnect())
 buttonFtpHostinger.grid(column=0, row=12)
+# Button Connect pythonInteractiveConnect
+buttonFtpHostinger = ttk.Button(text="Connect to interactive Python ", command=pythonInteractiveConnect)
+buttonFtpHostinger.bind("<Return>", lambda event: pythonInteractiveConnect())
+buttonFtpHostinger.grid(column=0, row=13)
 
 # SQL STUFF
 # SQL LOCAL
