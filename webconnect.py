@@ -38,6 +38,14 @@ def unofficialWinBIN(): \
         webbrowser.open('https://www.lfd.uci.edu/~gohlke/pythonlibs/', new=2)
 
 
+def youtubeConnect(): \
+        webbrowser.open('https://www.youtube.com/', new=2)
+
+
+def codeanywhereConnect(): \
+        webbrowser.open('https://codeanywhere.com/editor/', new=2)
+
+
 # ftp connection
 def ftpConnect():
     import ftplib

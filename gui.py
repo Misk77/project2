@@ -11,7 +11,7 @@ from sqlhostinger import sqlhostingConnector, sqlhostingCreateDatabase, sqlhosti
     sqlhostingSelectDB, sqlhostingShowDb, sqlhostingUsedatabase, hostingerguidb
 from socketScrips import socket_connect, server, serverUI
 from webconnect import homeConnect, wordPressConnect, googleConnect, slackConnect, guiPthonkConnect, \
-    soloLearnConnect, \
+    soloLearnConnect,youtubeConnect,codeanywhereConnect, \
     unofficialWinBIN, downloadpage, ftpConnect,pythonInteractiveConnect
 from cv2showImgVideo import fpsShow, showimagePIL, showimageOsStartfile, showvideo, showimageombyggnad, \
     showaboutplayground
@@ -31,7 +31,7 @@ root = Tk()
 root.configure(background="black")
 root.iconbitmap(default="Untitled.ico")
 root.title("Michel´s Playground")
-root.geometry("1150x600")
+root.geometry("1170x610")
 
 # background imgage
 frame1 = Frame(root)
@@ -132,6 +132,8 @@ webmenu.add_command(label="Slack", command=slackConnect)
 webmenu.add_command(label="FTP Connection", command=ftpConnect)
 webmenu.add_command(label="FTP Connection", command=pythonInteractiveConnect)
 webmenu.add_command(label="Unofficial Win Binary package", command=unofficialWinBIN)
+webmenu.add_command(label="youtube ", command=youtubeConnect)
+webmenu.add_command(label="codeanywhere ", command=codeanywhereConnect)
 webmenu.add_separator()
 webmenu.add_command(label="Exit", command=root.quit)
 
@@ -249,6 +251,14 @@ buttonFtpHostinger.grid(column=0, row=12)
 buttonFtpHostinger = ttk.Button(text="Connect to interactive Python ", command=pythonInteractiveConnect)
 buttonFtpHostinger.bind("<Return>", lambda event: pythonInteractiveConnect())
 buttonFtpHostinger.grid(column=0, row=13)
+# Button Connect pythonInteractiveConnect
+buttonFtpHostinger = ttk.Button(text="Connect youtube ", command=youtubeConnect)
+buttonFtpHostinger.bind("<Return>", lambda event: youtubeConnect())
+buttonFtpHostinger.grid(column=0, row=14)
+# Button Connect pythonInteractiveConnect
+buttonFtpHostinger = ttk.Button(text="Connect codeanywhere", command=codeanywhereConnect)
+buttonFtpHostinger.bind("<Return>", lambda event: codeanywhereConnect())
+buttonFtpHostinger.grid(column=0, row=15)
 
 # SQL STUFF
 # SQL LOCAL
@@ -398,13 +408,13 @@ buttonOSstartfile = ttk.Button(text="Test Script time", command=testScriptTime)
 buttonOSstartfile.bind("<Return>", lambda event: testScriptTime())
 buttonOSstartfile.grid(column=3, row=12)
 # Button Goodbye exit
-buttonGoodbye = Button(root, text="Press to exit", command=on_closing,
+buttonGoodbye = Button(root, text="exit", command=on_closing,
                        bg='#000000',
                        fg='#b7f731',
                        relief='flat',
-                       width=20)
+                       width=15)
 buttonGoodbye.bind("<Return>", lambda event: on_closing())
-buttonGoodbye.grid(row=15)
+buttonGoodbye.grid(column=4, row=15)
 buttonGoodbye.grid()
 
 # Button Guitar tuner
